@@ -1,0 +1,234 @@
+
+:root {
+	--color_backround: #C0C0C0;
+	--color_highlight: #FFFFFF;
+    --color_header: #000080;
+    --color_font: black;
+    --main_fonts: "MS Sans Serif", "Tahoma", "sans-serif";
+}
+
+
+.container {
+    display: flex;
+    
+}
+body {
+    background-color: var(--color_backround);
+    border-style: outset ;
+    border-top-color: var(--color_highlight);
+    border-bottom-color: var(--color_backround);
+    padding: 10px;
+}
+
+
+
+.column_left {
+    background-color: var(--color_backround);;
+    width: 30%;
+    border-style: outset ;
+    border-color: var(--color_highlight);
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.column_right {
+    background-color: var(--color_backround);;
+    width: 70%;
+    border-style: outset ;
+    border-color: var(--color_highlight);
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.bottom{
+    background-color: aqua;
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--main_fonts);
+    text-transform: uppercase;
+    color: var(--color_font)
+}
+
+h2 {
+    font-family: var(--main_fonts);
+    size: 20px;
+    color: var(--color_font)
+}
+
+h3 {
+    font-family: var(--main_fonts);
+    color: var(--color_font)
+}
+
+p {
+    font-family: var(--main_fonts);
+    color: var(--color_font)
+}
+
+li {
+    font-family: var(--main_fonts);
+    color: var(--color_font);
+    
+}
+
+header {
+    background-color: #000080;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    
+}
+
+.about > h1,
+.about > h2,
+.about > p{
+    font-family: var(--main_fonts);
+    color: var(--color_highlight);
+    align-items: center;
+}
+
+.photo img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;     
+    image-rendering: crisp-edges;
+}
+
+.button {
+    position: top right;
+    background-color: var(--color_backround);
+    padding: 5px;
+    border-style: outset;
+
+}
+
+.button.pressed {
+    position: top right;
+    background-color: var(--color_backround);
+    padding: 5px;
+    border-style: inset;
+
+}
+
+/* KOMORKA */
+
+
+
+@media (max-width: 750px) {
+.container {
+    display:flex;
+    flex-direction: column;
+}
+.body {
+    background-color: var(--color_backround);
+    border-style: outset ;
+    border-top-color: var(--color_highlight);
+    border-bottom-color: var(--color_backround);
+}
+
+.column_left {
+    max-width: 100%;
+    width:inherit;
+    border-style:none;
+    background-color: var(--color_backround);
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.column_right {
+    margin-top: 0%;
+    padding-top: 0%;
+    max-width: 100%;
+    width:inherit;
+    border-style:none;
+    background-color: var(--color_backround);    
+}
+
+.bottom{
+    background-color: aqua;
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--main_fonts);
+    text-transform: uppercase;
+    color: var(--color_font)
+}
+
+h2 {
+    font-family: var(--main_fonts);
+    size: 20px;
+    color: var(--color_font)
+}
+
+h3 {
+    font-family: var(--main_fonts);
+    color: var(--color_font)
+}
+
+p {
+    font-family: var(--main_fonts);
+    color: var(--color_font)
+}
+
+ul {
+    padding-inline-start: 2px;
+    padding-left: 5%;
+}
+
+
+li {
+    font-family: var(--main_fonts);
+    color: var(--color_font);
+    margin-left: 0;
+    padding-left: 0;
+    
+}
+
+header {
+    flex-direction: column;
+    background-color: #000080;
+    margin-bottom: 10px;
+    
+    
+}
+
+.photo img {
+    width: 250px;
+    image-rendering: crisp-edges;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+
+}
+
+.about > h1,
+.about > h2,
+.about > p{
+    font-family: var(--main_fonts);
+    color: var(--color_highlight);
+}
+
+
+.button {
+    position: top right;
+    background-color: var(--color_backround);
+    padding: 5px;
+    border-style: outset;
+
+}
+
+.button.pressed {
+    position: top right;
+    background-color: var(--color_backround);
+    padding: 5px;
+    border-style: inset;
+
+}   
+}
